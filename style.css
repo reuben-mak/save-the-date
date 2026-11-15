@@ -144,7 +144,7 @@ h1 {
 @font-face {
     font-family: "Perfections";
     src: url("./Perfections-Regular.otf") format("truetype");
-    font-weight: 400;
+    font-weight: 700;
     font-style: normal;
     font-display: swap;
 }
