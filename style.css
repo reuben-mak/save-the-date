@@ -1,8 +1,13 @@
 
+
 html {
     margin: 0;
     min-height: 100%;
     background-color: #FAF9F6;
+    background-image: url("./background.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 body {
@@ -10,11 +15,8 @@ body {
     min-height: 100vh;
     min-height: 100dvh;
 
-    background-color: #FAF9F6;
-    background-image: url("background.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-color: transparent;
+    background-image: none;
 
     display: grid;
     place-items: center;
@@ -24,10 +26,10 @@ body::before {
     content: "";
     position: fixed;
 
-    top: max(15px, env(safe-area-inset-top));
-    right: max(15px, env(safe-area-inset-right));
-    bottom: max(15px, env(safe-area-inset-bottom));
-    left: max(15px, env(safe-area-inset-left));
+    top: max(8px, calc(env(safe-area-inset-top) - 10px));
+    right: max(8px, env(safe-area-inset-right));
+    bottom: max(8px, env(safe-area-inset-bottom));
+    left: max(8px, env(safe-area-inset-left));
 
     border: 1px solid black;
     border-radius: 2px;
@@ -62,9 +64,10 @@ header {
     justify-content: center;
     align-items: baseline;
     gap: 0.2em;
-    font-family: "Perfections";
+    font-family: "Perfections", cursive;
     font-size: 10vw;
     font-weight: 700;
+    font-synthesis: weight;
     text-align: center;
 }
 
@@ -153,11 +156,10 @@ h1 {
 
 @font-face {
     font-family: "Perfections";
-    src: url("./Perfections-Regular.otf") format("truetype");
+    src: url("./Perfections-Regular.otf") format("opentype");
     font-weight: 400;
     font-style: normal;
     font-display: swap;
-    font-synthesis: weight style;
 }
 
 @font-face {
