@@ -3,11 +3,7 @@
 html {
     margin: 0;
     min-height: 100%;
-    background-color: #FAF9F6;
-    background-image: url("./background.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background: #FAF9F6;
 }
 
 body {
@@ -15,11 +11,12 @@ body {
     min-height: 100vh;
     min-height: 100dvh;
 
-    background-color: transparent;
-    background-image: none;
-
     display: grid;
     place-items: center;
+
+    position: relative;
+    isolation: isolate;
+    background: transparent;
 }
 
 body::before {
@@ -168,4 +165,17 @@ h1 {
     font-weight: 400;
     font-style: normal;
     font-display: swap;
+}
+
+.background-layer {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+
+    background-color: #FAF9F6;
+    background-image: url("background.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
