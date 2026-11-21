@@ -27,25 +27,18 @@
 html {
     margin: 0;
     min-height: 100%;
-    background-color: #FAF9F6;
-    background-image: url("./background.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-color: var(--paper);
 }
 
 body {
     margin: 0;
     min-height: 100vh;
     min-height: 100dvh;
-
     padding:
         max(24px, env(safe-area-inset-top))
         max(18px, env(safe-area-inset-right))
         max(24px, env(safe-area-inset-bottom))
         max(18px, env(safe-area-inset-left));
-
     display: grid;
     place-items: center;
     position: relative;
@@ -56,13 +49,9 @@ body {
 
 .background-layer {
     position: fixed;
-    top: -1px;
-    right: 0;
-    bottom: -1px;
-    left: 0;
+    inset: -1px 0 0;
     z-index: -1;
     pointer-events: none;
-
     background-color: var(--paper);
     background-image: url("./background.png");
     background-size: cover;
