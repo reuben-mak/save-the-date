@@ -197,12 +197,16 @@ h1 sup {
 
     header {
         flex-direction: column;
-        gap: 14px;
-        font-size: clamp(44px, 11.5vw, 76px);
-        line-height: 1;
+        align-items: center;
+        gap: 12px;
+        font-size: 13vw;
+        font-weight: 700;
+        line-height: 1.2;
+        -webkit-text-stroke: 0.5px currentColor;
     }
 
     .person-name {
+        margin-top: 2vh;
         gap: 0.28em;
         line-height: 1.08;
     }
