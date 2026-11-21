@@ -67,7 +67,7 @@ header {
     font-family: "Perfections", cursive;
     font-size: 10vw;
     font-weight: 700;
-    font-synthesis: weight;
+    -webkit-text-stroke: 0.5px currentColor;
     text-align: center;
 }
 
