@@ -105,7 +105,8 @@ header {
     font-family: "Perfections", cursive;
     font-size: clamp(52px, 6.4vw, 100px);
     font-weight: 700;
-    -webkit-text-stroke: 0.35px currentColor;
+    font-synthesis: weight;
+    -webkit-text-stroke: 0.5px currentColor;
     line-height: 1;
     text-align: center;
 }
@@ -130,7 +131,7 @@ p {
     font-family: "Montserrat", Arial, sans-serif;
     font-size: clamp(12px, 1.5vw, 18px);
     line-height: 1.4;
-    margin: clamp(24px, 3vw, 42px) 0 24px;
+    margin: clamp(38px, 3vw, 42px) 0 24px;
 }
 
 h1 {
